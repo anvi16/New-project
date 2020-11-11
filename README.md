@@ -1,2 +1,2 @@
-# New-project
-new project
+# Skole Prosjekt
+Logging SenseHat
