@@ -1,0 +1,41 @@
+from sense_hat import Sense_Hat 
+from date_time import date_time
+from csv import writer
+from datetime import datetime 
+
+sense = Sense_Hat()
+
+timestamp = date_time.now()
+delay = 1 
+
+def get_sense_data():
+    sense_data = []
+    sense_data.append('temperature')
+    sense_data.append(sense.get_temperature())
+    sense_data.append('pressure')
+    sense_data.append(sense.get_pressure())
+    sense_data.append('humidity')
+    sense_data.append(sense.get_humidity())
+
+    return get_sense_data()
+
+while True:
+	print(get_sense_data()
+
+with open('data.csv', 'w',newline='') as f:
+	data_writer = writer(f)
+
+	while True:
+		data = get_sense_data()
+		data_writer.writerow(data)
+        data_writer.writerow(['humidity','pressure','temperature'])
+
+while True: 
+    data = get_sense_data
+    dt = data[-1] - timestamp
+    if dt.seconds > delay:
+        data_writer.writerow(data)
+        timestamp = datetime.now() 
+        break
+
+        
