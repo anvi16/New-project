@@ -24,7 +24,7 @@ while True:
 
 with open('data.csv', 'w',newline='') as f:
 	data_writer = writer(f)
-
+    
 	while True:
 		data = get_sense_data()
 		data_writer.writerow(data)
